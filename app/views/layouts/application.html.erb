@@ -4,7 +4,9 @@
   <title>Grads</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,300|Righteous' rel='stylesheet' type='text/css'>  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,300|Righteous' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <%= csrf_meta_tags %>
 </head>
 <body>
 <div class="navbar-fixed">
@@ -13,13 +15,17 @@
       <%= link_to "The Modern Pilgrim", root_path, class: "brand-logo center", id: "logo" %>
       <ul class="right hide-on-med-and-down">
         <% if current_user %>
-          <li><%= link_to "Logout", logout_path, method: :delete %></li>
+          <li><%= link_to "Logout", logout_path, method: :delete, id: "links" %></li>
         <% else %>
           <li><%= link_to "Login", login_path %></li>
         <% end %>
         <% unless current_user %>
           <li><%= link_to "Create Account", new_user_path %></li>
         <% end %>
+      </ul>
+      <ul class="left hide-on-med-and-down">
+        <%= link_to "About Us", about_path %>
+      </ul>
     </div>
   </nav>
 </div>
