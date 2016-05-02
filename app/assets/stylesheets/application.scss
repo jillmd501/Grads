@@ -14,5 +14,19 @@
  *= require_self
  */
  @import "materialize/components/color";
- $primary-color: color("green", "lighten-2") !default;
+ $primary-color: color("teal", "lighten-2") !default;
  @import 'materialize';
+
+ .navbar-fixed {
+   color: transparent;
+   opacity: 0.6;
+   font-family: 'Righteous', cursive;
+ }
+
+h1 {
+
+}
+
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
+}
