@@ -1,9 +1,11 @@
-<h3> Want to start and adventure? </h3>
+<div class="container">
+  <h3 class="center"> Want to start and adventure? </h3>
 
-<%= form_for User.new do |f| %>
-  <%= f.label :username %>
-  <%= f.text_field :username %>
-  <%= f.label :password %>
-  <%= f.password_field :username %>
-  <%= f.submit "Let's Go!" %>
-<% end %>
+  <%= form_for User.new do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <%= f.label :password %>
+    <%= f.password_field :username %>
+    <%= f.submit "Let's Go!" %>
+  <% end %>
+</div>
