@@ -13,6 +13,7 @@ gem 'bcrypt'
 
 group :development, :test do
   gem 'byebug'
+  gem 'pry'
 end
 
 group :development do
